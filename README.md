@@ -25,8 +25,14 @@ This repository is used to track my master thesis latex.
    make clean
    ```
 
+我希望使用 Makefile 控制编译，所以在 VS Code 中禁用了自动编译：
+
+- 打开 VS Code 设置（command + ,）。
+- 搜索 `latex-workshop.latex.autoBuild.run` 并将其设置为 `never`。
+
 ## Project Structure
 
+```plaintext
 project/
 ├── bibliography/   # Bibliography files
 ├── build/          # Compiled intermediate and output files
@@ -36,20 +42,7 @@ project/
 ├── Makefile        # Makefile for build automation
 ├── README.md       # Project README file
 └── .gitignore      # Git ignore file
-
-## How to build
-
-In terminal, run the following command from the root directory of the repository:
-
-```bash
-make
 ```
-
-如果你希望使用 Makefile 控制编译，可以在 VS Code 中禁用自动编译，并使用 make 命令进行编译：
-
-打开 VS Code 设置（command + ,）。
-搜索 `latex-workshop.latex.autoBuild.run` 并将其设置为 `never`。
-
 
 ### Prerequisites  (MacOS)
 
